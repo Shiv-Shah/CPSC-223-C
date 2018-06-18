@@ -1,0 +1,13 @@
+[X] +1  Code compiles without errors
+[X] +1  Code compiles without warnings
+[X] +1  Code uses item struct and catalog array declarations as given
+[X] +1  Code allocates input string with enough space
+[X] +1  Code loops through catalog array
+[-] +1  Code uses global variables appropriately
+[X] +1  Code compares strings correctly
+[X] +1  Program runs without crashing
+[X] +1  Program reads data in the format provided
+[X] +1  Program outputs correct answer for sample input provided
+[X] +1  Program outputs correct answer for additional test input
+[X] +1  Program output is formatted correctly
+11 / 12

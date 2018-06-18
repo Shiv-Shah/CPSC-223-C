@@ -1,0 +1,8 @@
+-1  Inappropriate use of global variables
+-1  Use "%s" to print strings using printf()
+-1  free() memory after use
+    Use strcpy(s, "foo") instead of assigning s[0], s[1], ...
+-1  Strings should always be terminated with null character '\0'
+-1  Initializing an array with a string literal does not leave room to expand
+-1  Allocating a new string dynamically doesn't change the original string
+4 / 10

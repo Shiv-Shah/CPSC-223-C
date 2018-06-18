@@ -1,0 +1,62 @@
+[X] +1  Makefile (if provided) works
+[X] +1  Makefile (if provided) includes required compiler flags
+[-] +1  Code compiles without errors
+exam3.c: In function ‘main’:
+exam3.c:47:19: error: invalid initializer
+    GString back = g_string_new ("back");
+                   ^
+exam3.c:48:22: error: invalid initializer
+    GString history = g_string_new ("history");
+                      ^
+exam3.c:51:26: error: invalid type argument of ‘->’ (have ‘GString {aka struct _GString}’)
+    while(scanf("%s",datas->str) != EOF)
+                          ^
+exam3.c:53:27: error: ‘data’ undeclared (first use in this function)
+         if(g_string_equal(data,back))
+                           ^
+exam3.c:53:27: note: each undeclared identifier is reported only once for each function it appears in
+exam3.c:53:32: error: incompatible type for argument 2 of ‘g_string_equal’
+         if(g_string_equal(data,back))
+                                ^
+In file included from /usr/include/glib-2.0/glib/giochannel.h:34:0,
+                 from /usr/include/glib-2.0/glib.h:54,
+                 from /usr/include/glib-2.0/gmodule.h:28,
+                 from browser.h:1,
+                 from exam3.c:2:
+/usr/include/glib-2.0/glib/gstring.h:61:10: note: expected ‘const GString * {aka const struct _GString *}’ but argument is of type ‘GString {aka struct _GString}’
+ gboolean     g_string_equal             (const GString   *v,
+          ^
+exam3.c:58:37: error: incompatible type for argument 2 of ‘g_string_equal’
+         else if(g_string_equal(data,history))
+                                     ^
+In file included from /usr/include/glib-2.0/glib/giochannel.h:34:0,
+                 from /usr/include/glib-2.0/glib.h:54,
+                 from /usr/include/glib-2.0/gmodule.h:28,
+                 from browser.h:1,
+                 from exam3.c:2:
+/usr/include/glib-2.0/glib/gstring.h:61:10: note: expected ‘const GString * {aka const struct _GString *}’ but argument is of type ‘GString {aka struct _GString}’
+ gboolean     g_string_equal             (const GString   *v,
+          ^
+exam3.c:67:29: error: incompatible type for argument 2 of ‘visit_website’
+            visit_website(&b,datas);
+                             ^
+exam3.c:9:6: note: expected ‘GString * {aka struct _GString *}’ but argument is of type ‘GString {aka struct _GString}’
+ void visit_website(Browser * b, GString * s)
+      ^
+make: *** [exam3.o] Error 1
+
+[-] +1  Code compiles without warnings
+[-] +1  Program runs without crashing
+[-] +1  Program outputs correct answer for sample input provided
+[-] +1  Valgrind passes
+[X] +1  Program reads data in the format provided
+[X] +1  Program output is formatted correctly
+[X] +1  Program input can be read from a file specified by the user
+[X] +1  Program input is not limited in size
+[X] +1  Program input checked for 'history' and 'back' commands
+[-] +1  Browser includes fields for visit, back, and history
+[X] +1  Browser functions track maximum history size
+[-] +1  browser_new() dynamically allocates Browser struct
+[-] +1  Browser methods called as shown in example
+[-] +1  Browser history size is chosen dynamically
+8 / 17

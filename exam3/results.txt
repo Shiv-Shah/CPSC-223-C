@@ -1,0 +1,19 @@
+[X] +1  Makefile created
+[X] +1  Makefile works
+[X] +1  Makefile includes required compiler flags
+[X] +1  Code compiles without errors
+[X] +1  Code compiles without warnings
+[X] +1  Program outputs correct answer for first sample case
+[X] +1  Program outputs correct answer for second sample case
+[X] +1  Program outputs correct answer for third sample case
+[X] +1  Valgrind passes
+[X] +1  Program runs without crashing
+[X] +1  Program reads data in the format provided
+[X] +1  Program output is formatted correctly
+[X] +1  main.c iterates over files specified in argv
+[X] +1  main.c checks for command-line options
+[-] +1  main.c calls fclose() on FILE *
+[-] +1  filter.h declares filter() to accept a FILE * and an int (*p)(int)
+[-] +1  filter.c filter() iterates over characters in a file
+[X] +1  filter.c toggle() toggles the case of a character
+15 / 18
